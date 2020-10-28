@@ -3,7 +3,7 @@ deathswap.players = {}
 
 minetest.register_on_prejoinplayer(function()
 	if #deathswap.players == 2 then
-		return false, "Deathswap is full!"
+		return "Deathswap is full!"
 	end
 end)
 
